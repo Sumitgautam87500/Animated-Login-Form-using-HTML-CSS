@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 25rem;
+    border-radius: 10px;
+    padding: 5em 2rem;
+    box-shadow: 0px 0px 20p 0px black;
+    border: 1px solid black;
+}
+
+.login-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.username, .userpassword{
+    text-align: center;
+    border: 2px solid black;
+    margin: 1rem;
+    color: white;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+.username:focus,
+.userpassword:focus {
+    width: 20rem;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+    0%{
+        border-color: green;
+        color: green;
+    }
+    10%{
+        border-color: yellow;
+        color: yellow
+    }
+    20%{
+        border-color: green;
+        color: green;
+    }
+    30%{
+        border-color: hotpink;
+        color: hotpink;
+    }
+    40%{
+        border-color: red;
+        color: red;
+    }
+    50%{
+        border-color: blue;
+        color: blue;
+    }
+    60%{
+        border-color: cyan;
+        color: cyan;
+    }
+    70%{
+        border-color: skyblue;
+        color: skyblue;
+    }
+    80%{
+        border-color: pink;
+        color: pink;
+    }
+    90%{
+        border-color: red;
+        color: red;
+    }
+    100%{
+        border-color: blue;
+        color: blue;
+    }
+    
+}
+
+.loginBtn{
+   background: transparent;
+   border: 2px solid black;
+   padding: 1rem 3rem;
+   border-radius: 6rem;
+   text-decoration: underline;
+   font-size: 1rem;
+   color: white;
+   cursor: pointer;
+   transition: all .3s ease-in-out;
+}
+
+.loginBtn:hover{
+    background: green;
+    border: 2px solid green;
+}
